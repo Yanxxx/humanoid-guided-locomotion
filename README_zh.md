@@ -1,87 +1,87 @@
-# Humanoid-Guided-Locomotion
+# 人形机器人引导运动
 
-**[Switch to Chinese (中文)](README_zh.md)**
+**[Switch to English](README.md)**
 
-## Overview
+## 概述
 
-This repository contains an implementation of guided locomotion for humanoid robots within the NVIDIA Isaac Lab simulation environment. The project focuses on training agents to follow specified velocity commands (linear and angular) while maintaining physical stability and efficiency.
+本仓库包含在 NVIDIA Isaac Lab 仿真环境中实现的人形机器人引导运动。该项目专注于训练智能体遵循指定的速度指令（线性和角速度），同时保持物理稳定性和效率。
 
-This project is built upon the Isaac Lab project template, allowing for isolated development and easy integration as an Omniverse extension.
+该项目基于 Isaac Lab 项目模板构建，支持隔离开发，并可轻松作为 Omniverse 扩展集成。
 
-**Key Features:**
+**主要特性:**
 
-- **Command-Guided Locomotion:** Humanoid agents are trained to walk, turn, and move according to real-time velocity commands.
-- **Reinforcement Learning:** Utilizes reinforcement learning techniques to train robust locomotion policies.
-- **Isaac Lab Integration:** Fully integrated with Isaac Lab for high-fidelity physics simulation and rendering.
-- **Omniverse Extension:** Can be enabled as an extension within Omniverse for interactive use.
+- **指令引导运动:** 训练人形智能体根据实时速度指令行走、转身和移动。
+- **强化学习:** 利用强化学习技术来训练稳健的运动策略。
+- **Isaac Lab 集成:** 与 Isaac Lab 完全集成，以实现高保真物理仿真和渲染。
+- **Omniverse 扩展:** 可在 Omniverse 中作为扩展启用，以进行交互式使用。
 
-## Training Showcase
+## 训练展示
 
-The training process involves thousands of parallel simulations to learn a robust locomotion policy. Here's a look at the training progression and results.
+训练过程涉及数千个并行仿真，以学习稳健的运动策略。以下是训练进展和结果的展示。
 
-### Training in Isaac Lab
+### Isaac Lab 中的训练
 
-The learning process starts with agents exploring the environment and often failing.
-![Initial training phase](Screenshot%20from%202025-06-21%2011-27-43.png)
+学习过程始于智能体在环境中探索并经常失败。
+![初始训练阶段](Screenshot%20from%202025-06-21%2011-27-43.png)
 
-As training progresses, the agents become more stable and begin to learn coordinated movements.
-![Mid-training phase](Screenshot%20from%202025-06-21%2011-42-04.png)
+随着训练的进行，智能体变得更加稳定，并开始学习协调的动作。
+![中期训练阶段](Screenshot%20from%202025-06-21%2011-42-04.png)
 
-Towards the end of training, the agents exhibit stable and efficient locomotion across the environment.
-![Advanced training phase](Screenshot%20from%202025-06-21%2011-45-10.png)
+在训练后期，智能体在整个环境中表现出稳定而高效的运动。
+![高级训练阶段](Screenshot%20from%202025-06-21%2011-45-10.png)
 
-### Learning Metrics
+### 学习指标
 
-The terminal output displays key metrics from a training run, including rewards for tracking velocity commands, energy efficiency (torques), and maintaining balance.
+终端输出显示了训练运行的关键指标，包括跟踪速度指令的奖励、能量效率（力矩）和保持平衡。
 
-![Terminal output of training metrics](Screenshot%20from%202025-06-24%2019-45-47.png)
+![训练指标的终端输出](Screenshot%20from%202025-06-24%2019-45-47.png)
 
-### Final Policy in Action
+### 最终策略的实际效果
 
-After training, the humanoid agent is able to robustly follow velocity commands across challenging terrain.
+经过训练后，人形智能体能够在具有挑战性的地形上稳健地遵循速度指令。
 
-*(Imagine a GIF here showing the humanoid walking and turning smoothly)*
+*(这里想象一个 GIF 动图，展示人形机器人平稳地行走和转弯)*
 
-## Installation
+## 安装
 
-First, ensure you have Isaac Lab installed by following the official [installation guide](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html). The conda-based installation is recommended.
+首先，请遵循官方[安装指南](https://isaac-sim.github.io/IsaacLab/main/source/setup/installation/index.html)确保您已安装 Isaac Lab。建议使用基于 conda 的安装方法。
 
-Next, clone this repository to a location outside of your main `IsaacLab` directory.
+接下来，将此仓库克隆到您的主 `IsaacLab` 目录之外的位置。
 
 ```bash
-git clone [https://github.com/Yanxxx/humanoid-guided-locomotion.git](https://github.com/Yanxxx/humanoid-guided-locomotion.git)
+git clone https://github.com/Yanxxx/humanoid-guided-locomotion.git
 cd humanoid-guided-locomotion
 
-Using a python interpreter that has Isaac Lab installed, install this project in editable mode:
+使用已安装 Isaac Lab 的 python 解释器，以可编辑模式安装此项目：
 
-# Use 'PATH_TO_isaaclab.sh -p' instead of 'python' if Isaac Lab is not installed in a Python venv or conda
+# 如果 Isaac Lab 未安装在 Python venv 或 conda 中，请使用 'PATH_TO_isaaclab.sh -p' 代替 'python'
 python -m pip install -e source/Guided_Locomotion
 
-Usage
-You can verify the installation and run the trained agents.
+使用方法
+您可以验证安装并运行训练好的智能体。
 
-List Available Environments
-To see the custom task provided by this repository:
+列出可用环境
+查看此仓库提供的自定义任务：
 
 python scripts/list_envs.py
 
-Run a Pre-trained Agent
-To run a task with a trained policy (assuming a checkpoint exists):
+运行预训练的智能体
+使用训练好的策略运行任务（假设检查点已存在）：
 
-# Replace <RL_LIBRARY> with the library used for training (e.g., rsl_rl)
-# Replace <TASK_NAME> with the name from the list_envs script
+# 将 <RL_LIBRARY> 替换为用于训练的库（例如 rsl_rl）
+# 将 <TASK_NAME> 替换为 list_envs 脚本中列出的任务名称
 python scripts/<RL_LIBRARY>/play.py --task=<TASK_NAME>
 
-Start New Training
-To train a new policy from scratch:
+开始新的训练
+从头开始训练新策略：
 
-# Replace <RL_LIBRARY> with your RL library of choice
-# Replace <TASK_NAME> with the name from the list_envs script
+# 将 <RL_LIBRARY> 替换为您选择的 RL 库
+# 将 <TASK_NAME> 替换为 list_envs 脚本中列出的任务名称
 python scripts/<RL_LIBRARY>/train.py --task=<TASK_NAME>
 
-For more details on setting up an IDE or running this project as an Omniverse extension, please refer to the original template documentation.
+有关设置 IDE 或将此项目作为 Omniverse 扩展运行的更多详细信息，请参阅原始的模板文档。
 
-(The following is the original template documentation for reference)
+(以下是原始模板文档以供参考)
 
 Template for Isaac Lab Projects
 Overview
