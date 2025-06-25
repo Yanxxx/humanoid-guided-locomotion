@@ -5,7 +5,8 @@
 
 import gymnasium as gym
 
-from . import agents
+from . import agents, guided_locomotion_env_cfg
+
 
 ##
 # Register Gym environments.
@@ -17,7 +18,8 @@ gym.register(
     entry_point="isaaclab.envs:ManagerBasedRLEnv",
     disable_env_checker=True,
     kwargs={
-        "env_cfg_entry_point": f"{__name__}.guided_locomotion_env_cfg:GuidedLocomotionEnvCfg",
-        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:PPORunnerCfg",
+        "env_cfg_entry_point": f"{__name__}.guided_locomotion_env_cfg:GuidedG1RoughEnvCfg",
+        "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:G1RoughPPORunnerCfg",
+        # "rsl_rl_cfg_entry_point": f"{agents.__name__}.rsl_rl_ppo_cfg:PPORunnerCfg",
     },
 )
