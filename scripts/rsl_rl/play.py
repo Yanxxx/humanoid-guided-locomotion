@@ -62,7 +62,8 @@ import isaaclab_tasks  # noqa: F401
 import Guided_Locomotion  # noqa: F401
 from isaaclab_tasks.utils import get_checkpoint_path, parse_env_cfg
 
-# import Guided_Locomotion.tasks  # noqa: F401
+import Guided_Locomotion.tasks  # noqa: F401
+import Guided_Locomotion  # noqa: F401
 
 
 def main():
