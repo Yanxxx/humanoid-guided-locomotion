@@ -51,6 +51,7 @@ Next, clone this repository to a location outside of your main `IsaacLab` direct
 ```bash
 git clone [https://github.com/Yanxxx/humanoid-guided-locomotion.git](https://github.com/Yanxxx/humanoid-guided-locomotion.git)
 cd humanoid-guided-locomotion
+```
 
 Using a python interpreter that has Isaac Lab installed, install this project in editable mode:
 
