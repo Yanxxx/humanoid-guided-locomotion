@@ -28,7 +28,7 @@ As training progresses, the agents become more stable and begin to learn coordin
 ![Mid-training phase](Screenshot%20from%202025-06-21%2011-42-04.png)
 
 Towards the end of training, the agents exhibit stable and efficient locomotion across the environment.
-![Advanced training phase](Screenshot%20from%202025-06-21%2011-45-10.png)
+![Advanced training phase](images/training-final.png)
 
 ### Learning Metrics
 
