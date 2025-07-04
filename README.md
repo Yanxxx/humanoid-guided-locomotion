@@ -22,7 +22,7 @@ The training process involves thousands of parallel simulations to learn a robus
 ### Training in Isaac Lab
 
 The learning process starts with agents exploring the environment and often failing.
-![Initial training phase](Screenshot%20from%202025-06-21%2011-27-43.png)
+![Initial training phase](images/training-start.png)
 
 As training progresses, the agents become more stable and begin to learn coordinated movements.
 ![Mid-training phase](Screenshot%20from%202025-06-21%2011-42-04.png)
