@@ -25,7 +25,7 @@ The learning process starts with agents exploring the environment and often fail
 ![Initial training phase](images/training-start.png)
 
 As training progresses, the agents become more stable and begin to learn coordinated movements.
-![Mid-training phase](Screenshot%20from%202025-06-21%2011-42-04.png)
+![Mid-training phase](images/training-curriculum.png)
 
 Towards the end of training, the agents exhibit stable and efficient locomotion across the environment.
 ![Advanced training phase](images/training-final.png)
