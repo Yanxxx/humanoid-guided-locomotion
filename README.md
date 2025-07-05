@@ -54,31 +54,37 @@ cd humanoid-guided-locomotion
 ```
 
 Using a python interpreter that has Isaac Lab installed, install this project in editable mode:
-
+```
 # Use 'PATH_TO_isaaclab.sh -p' instead of 'python' if Isaac Lab is not installed in a Python venv or conda
 python -m pip install -e source/Guided_Locomotion
+```
 
 Usage
 You can verify the installation and run the trained agents.
 
 List Available Environments
 To see the custom task provided by this repository:
-
+```
 python scripts/list_envs.py
-
+```
 Run a Pre-trained Agent
 To run a task with a trained policy (assuming a checkpoint exists):
 
-# Replace <RL_LIBRARY> with the library used for training (e.g., rsl_rl)
-# Replace <TASK_NAME> with the name from the list_envs script
+Replace <RL_LIBRARY> with the library used for training (e.g., rsl_rl)
+Replace <TASK_NAME> with the name from the list_envs script
+```
 python scripts/<RL_LIBRARY>/play.py --task=<TASK_NAME>
+```
 
 Start New Training
 To train a new policy from scratch:
 
-# Replace <RL_LIBRARY> with your RL library of choice
-# Replace <TASK_NAME> with the name from the list_envs script
+Replace <RL_LIBRARY> with your RL library of choice
+Replace <TASK_NAME> with the name from the list_envs script
+
+```
 python scripts/<RL_LIBRARY>/train.py --task=<TASK_NAME>
+```
 
 For more details on setting up an IDE or running this project as an Omniverse extension, please refer to the original template documentation.
 
