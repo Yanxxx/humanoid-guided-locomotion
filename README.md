@@ -6,6 +6,8 @@
 
 This repository contains an implementation of guided locomotion for humanoid robots within the NVIDIA Isaac Lab simulation environment. The project focuses on training agents to follow specified velocity commands (linear and angular) while maintaining physical stability and efficiency.
 
+![Trained robots](images/g1-play.gif)
+
 This project is built upon the Isaac Lab project template, allowing for isolated development and easy integration as an Omniverse extension.
 
 **Key Features:**
@@ -34,7 +36,7 @@ Towards the end of training, the agents exhibit stable and efficient locomotion 
 
 The terminal output displays key metrics from a training run, including rewards for tracking velocity commands, energy efficiency (torques), and maintaining balance.
 
-![Terminal output of training metrics](Screenshot%20from%202025-06-24%2019-45-47.png)
+![Terminal output of training metrics](images/training-output.png)
 
 ### Final Policy in Action
 
