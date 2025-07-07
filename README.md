@@ -129,9 +129,10 @@ use 'FULL_PATH_TO_isaaclab.sh|bat -p' instead of 'python' if Isaac Lab is not in
 python scripts/list_envs.py
 
 Running a task:
-
+```
 use 'FULL_PATH_TO_isaaclab.sh|bat -p' instead of 'python' if Isaac Lab is not installed in Python venv or conda
 python scripts/<RL_LIBRARY>/train.py --task=<TASK_NAME>
+```
 
 Running a task with dummy agents:
 
@@ -190,22 +191,28 @@ Code formatting
 We have a pre-commit template to automatically format your code.
 To install pre-commit:
 
+```
 pip install pre-commit
+```
 
 Then you can run pre-commit with:
 
+```
 pre-commit run --all-files
+```
 
 Troubleshooting
 Pylance Missing Indexing of Extensions
 In some VsCode versions, the indexing of part of the extensions is missing.
 In this case, add the path to your extension in .vscode/settings.json under the key "python.analysis.extraPaths".
 
+```
 {
     "python.analysis.extraPaths": [
         "<path-to-ext-repo>/source/Guided_Locomotion"
     ]
 }
+```
 
 Pylance Crash
 If you encounter a crash in pylance, it is probable that too many files are indexed and you run out of memory.
