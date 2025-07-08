@@ -22,7 +22,7 @@
 ### Isaac Lab 中的训练
 
 学习过程始于智能体在环境中探索并经常失败。
-![初始训练阶段](images/trainging-start.png)
+![初始训练阶段](images/training-start.png)
 
 随着训练的进行，智能体变得更加稳定，并开始学习协调的动作。
 ![中期训练阶段](images/training-curriculum.png)
