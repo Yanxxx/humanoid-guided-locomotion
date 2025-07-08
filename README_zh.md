@@ -22,19 +22,19 @@
 ### Isaac Lab 中的训练
 
 学习过程始于智能体在环境中探索并经常失败。
-![初始训练阶段](Screenshot%20from%202025-06-21%2011-27-43.png)
+![初始训练阶段](images/trainging-start.png)
 
 随着训练的进行，智能体变得更加稳定，并开始学习协调的动作。
-![中期训练阶段](Screenshot%20from%202025-06-21%2011-42-04.png)
+![中期训练阶段](images/training-curriculum.png)
 
 在训练后期，智能体在整个环境中表现出稳定而高效的运动。
-![高级训练阶段](Screenshot%20from%202025-06-21%2011-45-10.png)
+![高级训练阶段](images/training-final.png)
 
 ### 学习指标
 
 终端输出显示了训练运行的关键指标，包括跟踪速度指令的奖励、能量效率（力矩）和保持平衡。
 
-![训练指标的终端输出](Screenshot%20from%202025-06-24%2019-45-47.png)
+![训练指标的终端输出](images/training-output.png)
 
 ### 最终策略的实际效果
 
