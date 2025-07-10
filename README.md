@@ -220,6 +220,7 @@ A possible solution is to exclude some of omniverse packages that are not used i
 To do so, modify .vscode/settings.json and comment out packages under the key "python.analysis.extraPaths"
 Some examples of packages that can likely be excluded are:
 
+```
 "<path-to-isaac-sim>/extscache/omni.anim.*"         // Animation packages
 "<path-to-isaac-sim>/extscache/omni.kit.*"          // Kit UI tools
 "<path-to-isaac-sim>/extscache/omni.graph.*"        // Graph UI tools
