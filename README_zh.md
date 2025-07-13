@@ -6,6 +6,8 @@
 
 本仓库包含在 NVIDIA Isaac Lab 仿真环境中实现的人形机器人引导运动。该项目专注于训练智能体遵循指定的速度指令（线性和角速度），同时保持物理稳定性和效率。
 
+![Trained robots](images/g1-play.gif)
+
 该项目基于 Isaac Lab 项目模板构建，支持隔离开发，并可轻松作为 Omniverse 扩展集成。
 
 **主要特性:**
