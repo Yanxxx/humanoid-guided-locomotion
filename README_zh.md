@@ -73,15 +73,15 @@ python scripts/list_envs.py
 运行预训练的智能体
 使用训练好的策略运行任务（假设检查点已存在）：
 
-# 将 <RL_LIBRARY> 替换为用于训练的库（例如 rsl_rl）
-# 将 <TASK_NAME> 替换为 list_envs 脚本中列出的任务名称
+#将 <RL_LIBRARY> 替换为用于训练的库（例如 rsl_rl）
+#将 <TASK_NAME> 替换为 list_envs 脚本中列出的任务名称
 python scripts/<RL_LIBRARY>/play.py --task=<TASK_NAME>
 
 开始新的训练
 从头开始训练新策略：
 
-# 将 <RL_LIBRARY> 替换为您选择的 RL 库
-# 将 <TASK_NAME> 替换为 list_envs 脚本中列出的任务名称
+#将 <RL_LIBRARY> 替换为您选择的 RL 库
+#将 <TASK_NAME> 替换为 list_envs 脚本中列出的任务名称
 python scripts/<RL_LIBRARY>/train.py --task=<TASK_NAME>
 
 有关设置 IDE 或将此项目作为 Omniverse 扩展运行的更多详细信息，请参阅原始的模板文档。
