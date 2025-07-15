@@ -53,11 +53,14 @@
 ```bash
 git clone https://github.com/Yanxxx/humanoid-guided-locomotion.git
 cd humanoid-guided-locomotion
+```
 
 使用已安装 Isaac Lab 的 python 解释器，以可编辑模式安装此项目：
 
 # 如果 Isaac Lab 未安装在 Python venv 或 conda 中，请使用 'PATH_TO_isaaclab.sh -p' 代替 'python'
+```
 python -m pip install -e source/Guided_Locomotion
+```
 
 使用方法
 您可以验证安装并运行训练好的智能体。
