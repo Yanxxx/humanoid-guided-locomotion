@@ -1,4 +1,4 @@
-# 人形机器人引导运动
+# 方向驱动的人形机器人运动控制
 
 **[Switch to English](README.md)**
 
