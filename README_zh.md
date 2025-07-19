@@ -123,18 +123,20 @@ Note: It the task name changes, it may be necessary to update the search pattern
 python scripts/list_envs.py
 
 Running a task:
-
-#use 'FULL_PATH_TO_isaaclab.sh|bat -p' instead of 'python' if Isaac Lab is not installed in Python venv or conda
+```
+# use 'FULL_PATH_TO_isaaclab.sh|bat -p' instead of 'python' if Isaac Lab is not installed in Python venv or conda
 python scripts/<RL_LIBRARY>/train.py --task=<TASK_NAME>
-
+```
 Running a task with dummy agents:
 
 These include dummy agents that output zero or random agents. They are useful to ensure that the environments are configured correctly.
 
 Zero-action agent
 
-#use 'FULL_PATH_TO_isaaclab.sh|bat -p' instead of 'python' if Isaac Lab is not installed in Python venv or conda
+```
+# use 'FULL_PATH_TO_isaaclab.sh|bat -p' instead of 'python' if Isaac Lab is not installed in Python venv or conda
 python scripts/zero_agent.py --task=<TASK_NAME>
+```
 
 Random-action agent
 
