@@ -105,7 +105,7 @@ Flexibility This template is set up to allow your code to be run as an extension
 
 Keywords: extension, template, isaaclab
 
-Installation
+# Installation
 Install Isaac Lab by following the installation guide.
 We recommend using the conda installation as it simplifies calling Python scripts from the terminal.
 
@@ -114,7 +114,7 @@ Clone or copy this project/repository separately from the Isaac Lab installation
 Using a python interpreter that has Isaac Lab installed, install the library in editable mode using:
 
 ```
-use 'PATH_TO_isaaclab.sh|bat -p' instead of 'python' if Isaac Lab is not installed in Python venv or conda
+# use 'PATH_TO_isaaclab.sh|bat -p' instead of 'python' if Isaac Lab is not installed in Python venv or conda
 python -m pip install -e source/Guided_Locomotion
 ```
 
