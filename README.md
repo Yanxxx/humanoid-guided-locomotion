@@ -72,9 +72,9 @@ python scripts/list_envs.py
 Run a Pre-trained Agent
 To run a task with a trained policy (assuming a checkpoint exists):
 
+```
 Replace <RL_LIBRARY> with the library used for training (e.g., rsl_rl)
 Replace <TASK_NAME> with the name from the list_envs script
-```
 python scripts/<RL_LIBRARY>/play.py --task=<TASK_NAME>
 ```
 
@@ -147,7 +147,6 @@ Zero-action agent
 
 ```
 # use 'FULL_PATH_TO_isaaclab.sh|bat -p' instead of 'python' if Isaac Lab is not installed in Python venv or conda
-
 python scripts/zero_agent.py --task=<TASK_NAME>
 ```
 
@@ -155,7 +154,6 @@ Random-action agent
 
 ```
 # use 'FULL_PATH_TO_isaaclab.sh|bat -p' instead of 'python' if Isaac Lab is not installed in Python venv or conda
-
 python scripts/random_agent.py --task=<TASK_NAME>
 ```
 
