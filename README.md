@@ -80,11 +80,10 @@ python scripts/<RL_LIBRARY>/play.py --task=<TASK_NAME>
 
 Start New Training
 To train a new policy from scratch:
-
-Replace <RL_LIBRARY> with your RL library of choice
-Replace <TASK_NAME> with the name from the list_envs script
-
 ```
+# Replace <RL_LIBRARY> with your RL library of choice
+# Replace <TASK_NAME> with the name from the list_envs script
+
 python scripts/<RL_LIBRARY>/train.py --task=<TASK_NAME>
 ```
 
