@@ -1,5 +1,8 @@
 # Humanoid-Guided-Locomotion
 
+![IssacLab 5 Version](https://github.com/isaac-sim/IsaacLab)
+![Platform](https://ubuntu.com/blog/tag/ubuntu-24-04-lts)
+![License](https://img.shields.io/badge/License-MIT-green.svg)
 **[Switch to Chinese (中文)](README_zh.md)**
 
 ## Overview
