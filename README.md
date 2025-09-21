@@ -1,4 +1,4 @@
-# Guided Humanoid Robot Locomotion
+# Direction Guided Humanoid Robot Locomotion
 
 ![IssacLab 5](https://img.shields.io/badge/IsaacLab-5.0-blue)
 ![Platform](https://img.shields.io/badge/Ubuntu-24.04-orange)
